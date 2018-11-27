@@ -19,6 +19,7 @@ import java.util.List;
 public class AdaptadorPerso extends RecyclerView.Adapter<AdaptadorPerso.miHolder> {
     private List list;
     private Context context;
+     //interfaz de callback
     private OnPersonaRecyclerListener onPersonaRecyclerListener;
 
 
@@ -26,6 +27,7 @@ public class AdaptadorPerso extends RecyclerView.Adapter<AdaptadorPerso.miHolder
     public AdaptadorPerso(List list, Context context) {
         this.list = list;
         this.context = context;
+         //interfaz de callback
         onPersonaRecyclerListener = (OnPersonaRecyclerListener) context;
     }
 
@@ -87,6 +89,7 @@ public class AdaptadorPerso extends RecyclerView.Adapter<AdaptadorPerso.miHolder
 
 
     }
+    //interfaz de callback
     public interface OnPersonaRecyclerListener{
         void OnPersonaRecylcerSelected(Persona p);
 
