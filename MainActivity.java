@@ -12,7 +12,7 @@ import com.example.juanfe.reciclerviews.adaptadores.AdaptadorPerso;
 import com.example.juanfe.reciclerviews.utils.Persona;
 
 import java.util.ArrayList;
-
+                                                                //interfaz de callback
 public class MainActivity extends AppCompatActivity implements AdaptadorPerso.OnPersonaRecyclerListener {
     RecyclerView recyclerView;
     Button boton;
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements AdaptadorPerso.On
         textView = findViewById(R.id.textoNombre);
 
     }
-
+     //interfaz de callback
     @Override
     public void OnPersonaRecylcerSelected(Persona p) {
         //arraylist para añadir y quitar nombres
